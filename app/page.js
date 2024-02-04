@@ -1,29 +1,27 @@
 import * as React from "react";
+import logo from "../assets/logo.png";
+import Image from "next/image";
 
-export default function MyComponent(props) {
+export default function Landing(props) {
   return (
     <div className="flex flex-col items-center bg-white">
-      <div className="flex overflow-hidden relative flex-col items-center self-stretch px-16 pt-6 w-full font-bold fill-slate-50 min-h-[1010px] text-slate-900 max-md:px-5 max-md:max-w-full">
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/4be70fc0e8cd6e0131de0e9055f2c9d4fda97a5c9235d5f82495ce0c5d15d55b?apiKey=7d6cd1057cee4359a8b6e7232c5184c9&"
-          className="absolute inset-0 object-cover size-full"
-        />
+      <div className="flex bg-[#11182a] overflow-hidden relative flex-col items-center self-stretch px-16 pt-6 w-full font-bold fill-slate-50 min-h-[1010px] text-gray-300 max-md:px-5 max-md:max-w-full">
         <div className="flex relative flex-col items-center mt-px w-full max-w-[1441px] max-md:max-w-full">
           <div className="flex gap-5 justify-between items-start max-w-full w-[1193px] max-md:flex-wrap">
             <div className="flex gap-3.5 text-xl leading-6 whitespace-nowrap">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/c359a9b8d78ac4066aa185e367266144cae4357e6af3e8195ef9c3032775b4f2?apiKey=7d6cd1057cee4359a8b6e7232c5184c9&"
-                className="aspect-[0.73] w-[27px]"
-              />
+              <Image width={50} height={50} src={logo} />
               <div className="self-start mt-4 grow">StartupLanding</div>
             </div>
-            <div className="self-stretch flex-auto my-auto text-base leading-8 text-center">
-              <span className="text-slate-900">Home Categories</span>{" "}
-              <span className="font-black text-slate-900"></span>{" "}
-              <span className="text-slate-900">Contact</span>{" "}
-              <span className="text-slate-900">About us</span>
+            <div className="flex self-stretch gap-3 my-auto text-base leading-8 text-center flex-2">
+              <span className="text-gray-300 cursor-pointer hover:text-[#f59e0b]">
+                Home Categories
+              </span>{" "}
+              <span className="text-gray-300 cursor-pointer hover:text-[#f59e0b]">
+                Contact
+              </span>{" "}
+              <span className="text-gray-300 cursor-pointer hover:text-[#f59e0b]">
+                About us
+              </span>
             </div>
             <div className="justify-center px-5 py-4 mt-1.5 text-base tracking-normal leading-6 text-white whitespace-nowrap rounded-md bg-slate-900">
               Purchase Now
@@ -55,7 +53,7 @@ export default function MyComponent(props) {
           </div>
         </div>
       </div>
-      <div className="mt-24 text-3xl font-bold tracking-tighter text-center whitespace-nowrap leading-[54.9px] text-slate-900 max-md:mt-10">
+      <div className="mt-24 text-3xl font-bold tracking-tighter text-center whitespace-nowrap leading-[54.9px] text-grey-300 max-md:mt-10">
         What the features of product
       </div>
       <div className="mt-5 text-lg leading-6 text-center text-gray-500 whitespace-nowrap">
@@ -72,7 +70,7 @@ export default function MyComponent(props) {
                   className="aspect-square w-[88px]"
                 />
                 <div className="flex flex-col flex-1 mt-2">
-                  <div className="text-lg font-bold leading-8 text-slate-900">
+                  <div className="text-lg font-bold leading-8 text-grey-300">
                     3D modeling & art
                   </div>
                   <div className="mt-6 text-base leading-8 text-gray-700">
@@ -100,7 +98,7 @@ export default function MyComponent(props) {
                   className="aspect-square w-[88px]"
                 />
                 <div className="flex flex-col flex-1 mt-2">
-                  <div className="text-lg font-bold leading-8 text-slate-900">
+                  <div className="text-lg font-bold leading-8 text-grey-300">
                     Digital promotion
                   </div>
                   <div className="mt-6 text-base leading-8 text-gray-700">
@@ -128,7 +126,7 @@ export default function MyComponent(props) {
                   className="aspect-square w-[88px]"
                 />
                 <div className="flex flex-col flex-1 mt-2">
-                  <div className="text-lg font-bold leading-8 text-slate-900">
+                  <div className="text-lg font-bold leading-8 text-grey-300">
                     Business Enterprise
                   </div>
                   <div className="mt-6 text-base leading-8 text-gray-700">
@@ -160,7 +158,7 @@ export default function MyComponent(props) {
                   className="aspect-square w-[88px]"
                 />
                 <div className="flex flex-col flex-1 mt-2">
-                  <div className="text-lg font-bold leading-8 text-slate-900">
+                  <div className="text-lg font-bold leading-8 text-grey-300">
                     Marketing & advertising
                   </div>
                   <div className="mt-6 text-base leading-8 text-gray-700">
@@ -188,7 +186,7 @@ export default function MyComponent(props) {
                   className="aspect-square w-[88px]"
                 />
                 <div className="flex flex-col flex-1 mt-2">
-                  <div className="text-lg font-bold leading-8 text-slate-900">
+                  <div className="text-lg font-bold leading-8 text-grey-300">
                     Ultimate development
                   </div>
                   <div className="mt-6 text-base leading-8 text-gray-700">
@@ -216,7 +214,7 @@ export default function MyComponent(props) {
                   className="aspect-square w-[88px]"
                 />
                 <div className="flex flex-col flex-1 mt-2">
-                  <div className="text-lg font-bold leading-8 text-slate-900">
+                  <div className="text-lg font-bold leading-8 text-grey-300">
                     Online support
                   </div>
                   <div className="mt-6 text-base leading-8 text-gray-700">
@@ -252,7 +250,7 @@ export default function MyComponent(props) {
                 <div className="text-lg font-bold leading-10 capitalize text-fuchsia-800">
                   Core features
                 </div>
-                <div className="mt-8 text-5xl font-bold tracking-tighter leading-[60px] text-slate-900">
+                <div className="mt-8 text-5xl font-bold tracking-tighter leading-[60px] text-grey-300">
                   Smart Jackpots that you may love this
                 </div>
                 <div className="flex self-center gap-5 mt-16 max-md:mt-10">
@@ -262,7 +260,7 @@ export default function MyComponent(props) {
                     className="self-start aspect-square w-[60px]"
                   />
                   <div className="flex flex-col flex-1">
-                    <div className="text-lg font-bold text-slate-900">
+                    <div className="text-lg font-bold text-grey-300">
                       Smart Features
                     </div>
                     <div className="text-base leading-7 text-gray-700 mt-7">
@@ -283,7 +281,7 @@ export default function MyComponent(props) {
                   </div>
                   <div className="flex flex-col ml-5 w-[82%] max-md:ml-0 max-md:w-full">
                     <div className="flex flex-col grow max-md:mt-10">
-                      <div className="text-lg font-bold text-slate-900">
+                      <div className="text-lg font-bold text-grey-300">
                         Secure Contents
                       </div>
                       <div className="text-base leading-7 text-gray-700 mt-7">
@@ -306,10 +304,10 @@ export default function MyComponent(props) {
               <div className="text-fuchsia-800 leading-[222%] max-md:max-w-full">
                 Behind the design
               </div>
-              <div className="mt-7 text-5xl tracking-tighter leading-[60px] text-slate-900 max-md:max-w-full">
+              <div className="mt-7 text-5xl tracking-tighter leading-[60px] text-grey-300 max-md:max-w-full">
                 Code that we used to built the website with integrating apps
               </div>
-              <div className="mt-12 leading-10 text-slate-900 max-md:mt-10 max-md:max-w-full">
+              <div className="mt-12 leading-10 text-grey-300 max-md:mt-10 max-md:max-w-full">
                 Get your tests delivered at let home collect sample from the
                 victory of the managments that supplies best design system
                 guidelines ever. Get your tests delivered at let home collect
@@ -329,7 +327,7 @@ export default function MyComponent(props) {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center self-stretch w-full px-16 pt-12 mt-40 text-lg whitespace-nowrap bg-slate-50 text-slate-900 max-md:px-5 max-md:mt-10 max-md:max-w-full">
+      <div className="flex flex-col items-center self-stretch w-full px-16 pt-12 mt-40 text-lg whitespace-nowrap bg-slate-50 text-grey-300 max-md:px-5 max-md:mt-10 max-md:max-w-full">
         <div className="flex z-10 flex-col mt-5 mb-0 w-full max-w-[1308px] max-md:mb-2.5 max-md:max-w-full">
           <div className="flex flex-col items-center py-px ml-11 max-w-full w-[1150px]">
             <div className="text-3xl font-bold tracking-tighter text-center leading-[54.9px]">
@@ -384,13 +382,13 @@ export default function MyComponent(props) {
           />
         </div>
       </div>
-      <div className="mt-72 text-3xl font-bold tracking-tighter text-center whitespace-nowrap leading-[54.9px] text-slate-900 max-md:mt-10">
+      <div className="mt-72 text-3xl font-bold tracking-tighter text-center whitespace-nowrap leading-[54.9px] text-grey-300 max-md:mt-10">
         What deal suit you perfect
       </div>
       <div className="mt-4 text-lg leading-6 text-center text-gray-500 whitespace-nowrap">
         Meet our pricing plan
       </div>
-      <div className="flex overflow-hidden relative flex-col gap-5 justify-between px-5 py-2 mt-14 text-base font-medium tracking-tight leading-6 aspect-[4.95] fill-gray-50 stroke-[1px] stroke-gray-200 text-slate-900 max-md:mt-10">
+      <div className="flex overflow-hidden relative flex-col gap-5 justify-between px-5 py-2 mt-14 text-base font-medium tracking-tight leading-6 aspect-[4.95] fill-gray-50 stroke-[1px] stroke-gray-200 text-grey-300 max-md:mt-10">
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c09da72d7178d0c3c3a12313154d98f9918f46e43df36adeb5b1320fc846442?apiKey=7d6cd1057cee4359a8b6e7232c5184c9&"
@@ -416,7 +414,7 @@ export default function MyComponent(props) {
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/63c75a7e835da1408ae9f2d44589000734d2ba54ba48597b7427092ecde9b568?apiKey=7d6cd1057cee4359a8b6e7232c5184c9&"
                   className="aspect-[1.14] w-[73px]"
                 />
-                <div className="mt-10 text-2xl font-bold tracking-tight text-slate-900">
+                <div className="mt-10 text-2xl font-bold tracking-tight text-grey-300">
                   For Team pack
                 </div>
                 <div className="flex gap-3.5 justify-between mt-12 max-md:mt-10">
@@ -490,7 +488,7 @@ export default function MyComponent(props) {
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/8fe012cacdce4750689aaa5f790ba0db777383dedde9ca0d7f120f9a292ca262?apiKey=7d6cd1057cee4359a8b6e7232c5184c9&"
                   className="mt-11 aspect-[1.32] w-[84px] max-md:mt-10"
                 />
-                <div className="mt-10 text-2xl font-bold tracking-tight text-slate-900">
+                <div className="mt-10 text-2xl font-bold tracking-tight text-grey-300">
                   For Organization pack
                 </div>
                 <div className="flex gap-3.5 justify-between mt-12 max-md:mt-10">
@@ -608,7 +606,7 @@ export default function MyComponent(props) {
         </div>
         <div className="flex flex-col self-start flex-1 mt-5 max-md:max-w-full">
           <div className="flex flex-col self-start ml-28 text-center whitespace-nowrap max-md:ml-2.5">
-            <div className="text-3xl font-bold tracking-tighter leading-[54.9px] text-slate-900">
+            <div className="text-3xl font-bold tracking-tighter leading-[54.9px] text-grey-300">
               What client say about us
             </div>
             <div className="self-center mt-5 text-lg leading-6 text-gray-500">
@@ -772,7 +770,7 @@ export default function MyComponent(props) {
           </div>
         </div>
       </div>
-      <div className="mt-24 text-3xl font-bold tracking-tighter text-center whitespace-nowrap leading-[54.9px] text-slate-900 max-md:mt-10">
+      <div className="mt-24 text-3xl font-bold tracking-tighter text-center whitespace-nowrap leading-[54.9px] text-grey-300 max-md:mt-10">
         Popular blog post we updated
       </div>
       <div className="mt-5 text-lg leading-6 text-center text-gray-500 whitespace-nowrap">
@@ -781,7 +779,7 @@ export default function MyComponent(props) {
       <div className="px-5 mt-20 max-w-full w-[1199px] max-md:mt-10">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
           <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
-            <div className="flex flex-col text-base leading-8 text-slate-900 max-md:mt-9">
+            <div className="flex flex-col text-base leading-8 text-grey-300 max-md:mt-9">
               <img
                 loading="lazy"
                 srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/46f5be4df82b51153b086beb7a84917ca199f530c96382420b4b2b2605c206a1?apiKey=7d6cd1057cee4359a8b6e7232c5184c9&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/46f5be4df82b51153b086beb7a84917ca199f530c96382420b4b2b2605c206a1?apiKey=7d6cd1057cee4359a8b6e7232c5184c9&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/46f5be4df82b51153b086beb7a84917ca199f530c96382420b4b2b2605c206a1?apiKey=7d6cd1057cee4359a8b6e7232c5184c9&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/46f5be4df82b51153b086beb7a84917ca199f530c96382420b4b2b2605c206a1?apiKey=7d6cd1057cee4359a8b6e7232c5184c9&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/46f5be4df82b51153b086beb7a84917ca199f530c96382420b4b2b2605c206a1?apiKey=7d6cd1057cee4359a8b6e7232c5184c9&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/46f5be4df82b51153b086beb7a84917ca199f530c96382420b4b2b2605c206a1?apiKey=7d6cd1057cee4359a8b6e7232c5184c9&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/46f5be4df82b51153b086beb7a84917ca199f530c96382420b4b2b2605c206a1?apiKey=7d6cd1057cee4359a8b6e7232c5184c9&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/46f5be4df82b51153b086beb7a84917ca199f530c96382420b4b2b2605c206a1?apiKey=7d6cd1057cee4359a8b6e7232c5184c9&"
@@ -806,7 +804,7 @@ export default function MyComponent(props) {
             </div>
           </div>
           <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-            <div className="flex flex-col text-base font-medium grow text-slate-900 max-md:mt-9">
+            <div className="flex flex-col text-base font-medium grow text-grey-300 max-md:mt-9">
               <div className="justify-center text-xl leading-9 tracking-normal bg-gray-100 rounded-md px-7 py-9 max-md:px-5">
                 Antibias receives honorable gift mention at Fast Company’s most
                 Innovation by Design Awards
@@ -856,7 +854,7 @@ export default function MyComponent(props) {
           </div>
         </div>
       </div>
-      <div className="mt-44 text-3xl font-bold tracking-tighter text-center whitespace-nowrap leading-[54.9px] text-slate-900 max-md:mt-10">
+      <div className="mt-44 text-3xl font-bold tracking-tighter text-center whitespace-nowrap leading-[54.9px] text-grey-300 max-md:mt-10">
         Frequently Ask Question
       </div>
       <div className="mt-5 text-lg leading-6 text-center text-gray-500 whitespace-nowrap">
@@ -866,7 +864,7 @@ export default function MyComponent(props) {
         <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
           <div className="flex flex-col w-[31%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col px-5 mt-5 text-base font-bold max-md:mt-10">
-              <div className="text-2xl leading-10 tracking-tighter text-slate-900">
+              <div className="text-2xl leading-10 tracking-tighter text-grey-300">
                 Do you have any quesiton? Please
                 <br />
                 ask here we ready to support
@@ -882,7 +880,7 @@ export default function MyComponent(props) {
           </div>
           <div className="flex flex-col ml-5 w-[69%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col grow max-md:mt-10 max-md:max-w-full">
-              <div className="flex justify-between gap-5 px-8 text-lg font-medium leading-9 tracking-normal bg-white border border-gray-100 border-solid rounded-md py-7 text-slate-900 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
+              <div className="flex justify-between gap-5 px-8 text-lg font-medium leading-9 tracking-normal bg-white border border-gray-100 border-solid rounded-md py-7 text-grey-300 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
                 <div className="flex-auto">
                   How much does it cost to be a credit card merchant?
                 </div>
@@ -893,7 +891,7 @@ export default function MyComponent(props) {
                 />
               </div>
               <div className="flex flex-col px-8 mt-2 bg-white border border-gray-100 border-solid rounded-md py-9 max-md:px-5 max-md:max-w-full">
-                <div className="flex justify-between gap-5 text-lg font-medium leading-9 tracking-normal text-slate-900 max-md:flex-wrap max-md:max-w-full">
+                <div className="flex justify-between gap-5 text-lg font-medium leading-9 tracking-normal text-grey-300 max-md:flex-wrap max-md:max-w-full">
                   <div className="flex-auto">
                     How can I open a merchant account?
                   </div>
@@ -912,7 +910,7 @@ export default function MyComponent(props) {
                   bookings with your company again. I will also recommend
                 </div>
               </div>
-              <div className="flex justify-between gap-5 px-8 mt-2 text-lg font-medium leading-9 tracking-normal bg-white border border-gray-100 border-solid rounded-md py-7 text-slate-900 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
+              <div className="flex justify-between gap-5 px-8 mt-2 text-lg font-medium leading-9 tracking-normal bg-white border border-gray-100 border-solid rounded-md py-7 text-grey-300 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
                 <div className="flex-auto">
                   How long does the application take?
                 </div>
@@ -926,7 +924,7 @@ export default function MyComponent(props) {
           </div>
         </div>
       </div>
-      <div className="flex gap-5 justify-between px-8 py-7 mt-2 ml-52 max-w-full text-lg font-medium tracking-normal leading-9 bg-white rounded-md border border-gray-100 border-solid text-slate-900 w-[792px] max-md:flex-wrap max-md:px-5">
+      <div className="flex gap-5 justify-between px-8 py-7 mt-2 ml-52 max-w-full text-lg font-medium tracking-normal leading-9 bg-white rounded-md border border-gray-100 border-solid text-grey-300 w-[792px] max-md:flex-wrap max-md:px-5">
         <div className="flex-auto">
           Can I make payment outside of Hong Kong?
         </div>
@@ -936,7 +934,7 @@ export default function MyComponent(props) {
           className="self-start aspect-[0.6] fill-slate-900 w-[9px]"
         />
       </div>
-      <div className="flex gap-5 justify-between px-8 py-7 mt-2 ml-52 max-w-full text-lg font-medium tracking-normal leading-9 bg-white rounded-md border border-gray-100 border-solid text-slate-900 w-[792px] max-md:flex-wrap max-md:px-5">
+      <div className="flex gap-5 justify-between px-8 py-7 mt-2 ml-52 max-w-full text-lg font-medium tracking-normal leading-9 bg-white rounded-md border border-gray-100 border-solid text-grey-300 w-[792px] max-md:flex-wrap max-md:px-5">
         <div className="flex-auto">How do I get the payment complete?</div>
         <img
           loading="lazy"
